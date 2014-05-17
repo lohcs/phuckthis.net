@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ptnet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link href="http://bootswatch.com/simplex/bootstrap.min.css" type='text/stylesheet' rel='stylesheet' />
+  
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+  
+  <div class="row">
+  
+    <div class="col-md-12">
+      <h1>P.net</h1>
+      <h4>The only place on the Internet <!--where you can let things off your chest without people judging you. No registering too, ever. --> </h4>
+    </div>
+    
+  </div>
+  
+
+<%= yield %>
+</div> <!-- Close container -->
+</body>
+</html>

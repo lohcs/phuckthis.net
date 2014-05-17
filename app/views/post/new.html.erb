@@ -1,0 +1,22 @@
+
+<div class="row">
+
+  <div class="col-md-12">
+    <h3>I feel you, just let your feelings out .... </h3>
+  </div>
+  
+  <div class="col-md-9">
+    <%= form_tag processpost_path , method: "post" , role: "form" do %>
+      
+      <textarea name="postbody" class="form-control" rows="6" placeholder="What do you want to say .."></textarea>
+      <br />
+      <input type="text" name="name" class="form-control" placeholder="Your Name (Optional)" />
+      <Br />
+    <button type="submit" class="btn btn-success" value="Submit">I'm done</button>
+    <%= link_to "Cancel" , root_path , :class => "btn" %>
+
+      
+    <% end %>
+  </div>
+  
+</div>

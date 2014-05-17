@@ -1,0 +1,10 @@
+<div class="col-md-12 rounded-border img-rounded" style="padding:10px;">
+  <p class="bodytext"><%= postbody.body %>
+  </p>
+
+  <p>
+  <div class="text-right">
+    Posted by <%= postbody.name %> <%= time_ago_in_words(postbody.created_at) %> ago  
+  </div>
+  </p>
+</div>
